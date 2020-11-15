@@ -1,0 +1,114 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-left: 5px;
+
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'arial Black', Times;
+    font-size:40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+
+    height: 400px;
+    background-size: cover;/*pegar a area de cobertura*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*no meio da tela, verticalmente*/
+    align-items: flex-start;/*começando na esquerda*/
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+
+
+.filme-principal .titulo{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*https://fontawesome.com/ start for free, cadastra, send kit code, copia e cola o link aqui*/
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;/*mãozinha quando passa no botão*/
+    transition: 3s ease all;/*efeito botão*/
+}
+
+.botao:hover{
+    background-color: white;/*efeito nos botões*/
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+/* WRAPPER = ENVELOPAR*/
+.container{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+/*Jqauery https://owlcarousel2.github.io/OwlCarousel2/*/
+
+.box-filme{
+    height: 50%;
+    width: 50%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
